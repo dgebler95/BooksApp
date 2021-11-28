@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{%  block content  %}
+
+
+{{ object_list }}
+
+{% for instance in object_order_by %}
+    <p>{ {{ instance.language }} - {{ instance.title_book }} - {{ instance.type }}</p>
+
+
+{% endfor %}
+
+
+{% endblock %}
